@@ -1,0 +1,1323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(194,162,162,1) 50%, rgba(255,16,0,1) 100%);
+}
+
+header{ 
+    width:  100%;
+    height: 90px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* inicio del icono de whatsapp*/
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: rgb(5, 255, 5);
+    background: black;
+}
+/* final del icono de whatsapp*/
+
+/* Inicio del logo metalpan*/
+.logo{
+    max-width: 20%;
+}
+
+.logo img{
+    max-width: 11%;
+    position: absolute;top: 0px; left: 10px;
+    display: flex;
+}
+/* Final del logo metalpan*/
+
+/*Inicio del Menu de de la parte superior*/
+.navbar{
+    
+    width: 100%;
+}
+.nav-links{
+    
+    width: 100%;
+}
+.navbar .nav-links ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 30px;  left: 70px;
+    
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+    
+}
+
+.navbar .nav-links ul li.active a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.navbar .nav-links ul li.active a:hover{
+    border-bottom: 2px solid c;
+}
+
+.menu-horizontal > li > a{
+    text-transform: capitalize;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -3px;
+}
+.menu-horizontal > li:hover{
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -4px;
+}
+/*Final del Menu de de la parte superior*/
+
+/*Inicio del menu para celulares*/
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+/*Inicio del menu para celulares*/
+
+/*Inicio del menu responsive*/
+    @media (max-width: 980px){
+        .navbar{
+            padding: 0;
+        }
+        .navbar .menu-hamburger{
+            display: block;
+        }
+        .nav-links{
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(8px);
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all 0.5 ease;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links.mobile-menu{
+        margin-left: 0;
+        }
+        .nav-links ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .navbar .nav-links ul li {
+            margin: 25px 0;
+            font-size: 1.2em;
+        }
+    }
+/*Final del menu responsive*/
+
+
+/*Inicio del Video principal*/
+.media__cover{
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.media__cover video{
+    width: 100%;
+    margin-top: 110px;
+    position: absolute;
+    top: 490px; left: 0px;
+    
+}
+/*Final del Video principal*/
+
+/*Inicio resposive del Video principal*/
+@media (max-width: 1200px){
+    .media__cover{
+        width: 100%;
+        position: relative;
+        top: 100px;
+    }
+    
+    .media__cover video{
+        width: 100%;
+        margin-top: 110px;
+        position: absolute;
+        top: 454px; left: 0px;
+        
+    }
+}
+
+
+/*Inicio de galeria de proovedores*/
+.slider{
+    
+    display: flex;
+    height: 100px;
+    margin: 20px;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 1500px; left: -20px;
+    
+}
+.slider::before{
+
+    width: 10.95%;
+    position: absolute;
+    left: 100px;
+    content: "";
+    height: 10px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0),
+    hsla(0, 0%, 96.9%, 0.99) 99%);
+}
+.slider:after{
+    position: absolute;
+    right: 1100px;
+    content: "";
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
+}
+.slider .slider-track{
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: 80%;
+}
+.slider .slide{
+    display: flex;
+}
+.slide{
+    width: 370px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide img{
+    width: 200px;
+    height: 70px;
+}
+/*Final de galeria de proovedores*/
+
+/*Inicio de galeria responsive de proovedores*/
+@media (max-width: 980px)
+{
+    .slider{
+    
+        display: flex;
+        height: 100px;
+        margin: 20px;
+        overflow: hidden;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 400px; left: -20px;
+        
+    } 
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-240px * 5));
+        transform: translateX(calc(-240px * 5));
+    }
+}
+/*Final de galeria responsive de proovedores*/
+
+/*Inicio del Banner principal de pagina de inicio*/
+.bannerp{
+    width: 100%;
+}
+
+.bannerp img{
+    width: 100%;
+    position: relative;
+    top: 90px;
+}
+/*Final del Banner principal de pagina de inicio*/
+
+/*Inicio de la Foto que pertenecemos al grupo*/
+.tz{
+    display: flex;
+    max-width: 100%;
+    height: 400px;
+    gap: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 1800px; left: -330px;
+    
+}
+.as{
+    max-width: 100%;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    top: -464px;
+}
+
+.as img{
+    width: 43.0%;
+    position: relative;
+    top: -2000; left: 920px;
+}
+
+.tzimg{
+    max-width: 100%;
+    object-fit: cover;
+    display: flex;
+    transition: 0.5s ease;
+}
+.tzimg img{
+    width: 100%;
+    position: relative;
+    top: 0px; left: 0px;
+}
+
+.tzimg img:hover{
+    transform: scale3d(1.3);
+}
+/*Final de la Foto que pertenecemos al grupo*/
+
+/*Inicio responsive de la Foto que pertenecemos al grupo*/
+@media (max-width: 1250px)
+{
+    .tzimg img{
+        width: 40%;
+        position: relative;
+        left: 400px;
+    }
+}
+
+@media (max-width: 980px)
+{
+    .tzimg img{
+        width: 90%;
+        position: relative;
+        left: 5px; top: 50px;
+    }
+
+    .tz{
+        display: flex;
+        max-width: 100%;
+        height: 400px;
+        gap: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 600px;
+    }
+}
+/*Final responsive de la Foto que pertenecemos al grupo*/
+
+/*Inicio de Galeria seria de productos*/
+.container2{
+    max-width: 90%;
+    height: 20;
+    gap: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 2650px; left: 85px;
+
+}
+.box {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+}
+.box img{
+    width: 100%;
+    transition: 0.2s ease;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    position: relative;
+    top: 50px; left: 80px;
+}
+
+.box img:hover{
+    transform: scale(1.3);
+    filter: grayscale(0%);
+}
+/*Final de Galeria seria de productos*/
+
+/*Inicio responsive de Galeria seria de productos*/
+@media (max-width: 980px)
+{
+    .container2{
+        max-width: 80%;
+        height: 20;
+        gap: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top:1100px; left: 35px;
+    }
+}
+
+.box img{
+    width: 100%;
+    transition: 0.2s ease;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    position: relative;
+    top: -20px; left: 70px;
+    
+}
+.box {
+    width: 24rem;
+    height: 20rem;
+    object-fit: cover;
+    position: relative;
+    top: 0px;
+}
+/*Final responsive de Galeria seria de productos*/
+
+/* Inicio de Banner de proyectos*/
+
+.bannerpro{
+    width: 100%;
+    position: relative;
+    display: flex;
+    top: 2900px; 
+}
+.bannerpro img{
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+/* Final de Banner de proyectos*/
+
+/* Inicio responsive de Banner de proyectos*/
+@media (max-width: 980px)
+{
+    .bannerpro{
+        width: 100%;
+        position: relative;
+        display: flex;
+        top: 2300px; left: 0px;
+    }
+    .bannerpro img{
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+}
+/* Final responsive de Banner de proyectos*/
+
+/*Inicio de la galeria Linea de metro*/
+.tarjeta-posicion{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tarjeta{
+    background-image: url(m1.png);
+    background-size: cover;
+    height: 500px;
+    width: 80%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+    position: relative;
+    top: 3000px; left: 120px;
+
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(m1.png);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(m2.png);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(m3.png);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(m4.png);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(m1.png);
+        background-size: cover;
+    }
+}
+/*Final de la galeria Linea de metro*/
+
+/*Inicio de galeria de proyectos varios*/
+.galery {
+    width: 30%;
+    position: relative;
+    display: flex;
+    top: 1400px;
+    left: 0;
+}
+
+.columna1{
+    width: 95%;
+    position: relative;
+    left: 205px; /* Ajusta el valor para acercar las columnas */
+    top: 500px;
+    margin: 1%; /* Agrega margen derecho para separar las columnas */
+}
+.columna1 img{
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 90%;
+    filter: grayscale(100%);
+    transition: aa .3s ease;
+}
+.columna1 img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+.columna2{
+    width: 95%;
+    position: relative;
+    left: 185px; /* Ajusta el valor para acercar las columnas */
+    top: 500px;
+    margin: 1%; /* Agrega margen derecho para separar las columnas */
+}
+.columna2 img{
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 90%;
+    filter: grayscale(100%);
+    transition: aa .3s ease;
+}
+.columna2 img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+
+.columna3{
+    width: 95%;
+    position: relative;
+    left: 158px; /* Ajusta el valor para acercar las columnas */
+    top: 500px;
+    margin: 1%; /* Agrega margen derecho para separar las columnas */
+}
+.columna3 img{
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 90%;
+    filter: grayscale(100%);
+    transition: aa .3s ease;
+}
+.columna3 img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+}
+.overlay .slideshow{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .9);
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.slideshow img{
+    height: 100%;
+    width: 00%;
+    object-fit: contain;
+}
+
+.galery{
+    max-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+    padding: 100px 0;
+    position: absolute;
+    top: 3900px; left: -100px;
+}
+.box img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8%;
+}
+.box:nth-child(1) {
+    grid-row-start: span 2;
+}
+.box:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+/*Final de galeria de proyectos varios*/
+
+/*Inicio responsive de galeria de proyectos varios*/
+@media (max-width: 980px)
+{
+    .galery {
+        width: 30%;
+        position: relative;
+        display: flex;
+        top: 1400px;
+        left: 0;
+    }
+    
+    .columna1 {
+        width: 35%;
+        position: relative;
+        left: 105px; /* Ajusta el valor para acercar las columnas */
+        top: -450px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+
+    .columna2 {
+        width: 35%;
+        position: relative;
+        left: -130px; /* Ajusta el valor para acercar las columnas */
+        top: -350px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+    .columna3 {
+        width: 35%;
+        position: relative;
+        left: -360px; /* Ajusta el valor para acercar las columnas */
+        top: -350px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+    
+    .columna1 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna2 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna3 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna3 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+    .columna1 img:hover{
+        cursor: pointer;
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        transform: scale(1.1);
+    }
+    
+    .columna2 img:hover{
+        cursor: pointer;
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        transform: scale(1.1);
+    }
+}
+/*Final responsive de galeria de proyectos varios*/
+@media (max-width: 1200px)
+{
+    .galery {
+        width: 100%;
+        position: relative;
+        display: flex;
+        top: 3300px;
+        left: 0;
+    }
+    
+    .columna1 {
+        width: 100%;
+        position: relative;
+        left: 6px; /* Ajusta el valor para acercar las columnas */
+        top: -350px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+
+    .columna2 {
+        width: 100%;
+        position: relative;
+        left: 20px; /* Ajusta el valor para acercar las columnas */
+        top: -350px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+    .columna3 {
+        width: 100%;
+        position: relative;
+        left: 20px; /* Ajusta el valor para acercar las columnas */
+        top: -350px;
+        margin: 1%; /* Agrega margen derecho para separar las columnas */
+    }
+    
+    .columna1 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna2 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna3 img {
+        margin-top: 10px;
+        width: 90%;
+        filter: grayscale(100%);
+        transition: all 0.3s ease; /* Corrige el nombre de la propiedad de transición */
+    }
+
+    .columna1 img:hover{
+        cursor: pointer;
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        transform: scale(1.1);
+    }
+    
+    .columna2 img:hover{
+        cursor: pointer;
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        transform: scale(1.1);
+    }
+}
+
+/*Inicio BANNER de Metalpan*/
+.banner{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 4900px; left: 0px;
+    background: #020202;
+    padding: 40px;
+}
+.banner__icon-heart{
+    width: 90%;
+    position: absolute;
+    top: 20px; left: 20px;
+}
+.banner__icon-heart img{
+    width: 40%;
+    position: absolute;
+    top: -10px; left: 20px;
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.banner__text{
+    width: 55%;
+    height: 200px;
+    position: absolute;
+    top: 100px; left: 545px;
+    color: white;
+    font-size: 20px;
+    padding: 40px;
+}
+/*Final BANNER de Metalpan*/
+
+@media (max-width: 1200px)
+{
+    .banner{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 3000px; left: 0px;
+        background: #020202;
+        padding: 40px;
+    }
+    .banner__icon-heart{
+        width: 100%;
+        position: absolute;
+        top: 20px; left: 0px;
+    }
+    .banner__icon-heart img{
+        width: 40%;
+        position: absolute;
+        top: -10px; left: 5px;
+        animation: imgg 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+    
+    .banner__text{
+        width: 58%;
+        height: 100px;
+        position: absolute;
+        top: 80px; left: 480px;
+        color: white;
+        font-size: 20px;
+        padding: 40px;
+    }
+}
+/*Inicio responsive BANNER de Metalpan*/
+@media (max-width: 980px)
+{
+    .banner{
+        width: 100%;
+        height: 130px;
+        position: relative;
+        top: 3000px; left: 0px;
+        background: #020202;
+        padding: 40px;
+    }
+    .banner__icon-heart{
+        width: 100%;
+        position: absolute;
+        top: 20px; left: 0px;
+    }
+    .banner__icon-heart img{
+        width: 40%;
+        position: absolute;
+        top: -10px; left: 5px;
+        animation: imgg 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+    
+    .banner__text{
+        width: 70%;
+        height: 100px;
+        position: absolute;
+        top: -10px; left: 140px;
+        color: white;
+        font-size: 10px;
+        padding: 40px;
+    }
+}
+/*Final responsive BANNER de Metalpan*/
+
+/*Inicio del footer parte final */
+
+/*Inicio de los Botones de redes sociales*/
+.buttons_soci{
+    width: 20%;
+    height: auto;
+    display: flex;
+    padding: 10px 3px;
+    border: auto;
+    position: absolute;
+    top: 160px; left: 410px; 
+}
+.buttons_soci a {
+    text-decoration: none;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ffffff;
+    color: #fa0202;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: all .2s ease-in-out;
+
+}
+
+.buttons_soci a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.buttons__cover{
+    display: flex;
+    margin-top: 700px;
+    position: absolute;top: 2000px; left: 40px;
+}
+
+.btn__readMore-cover{
+    padding: 14px 40px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+    position: absolute;top: 1000px; left: 40px;
+}
+
+.btn__readMore-cover:hover{
+    background: #E8E8E8;
+    position: absolute;top: 4000px; left: 40px;
+}
+/*Final de los Botones de redes sociales*/
+
+/*Inicio del Banner final footer*/
+.copy{
+    color: #020202;
+    width: 100%;
+    height: 240px;
+    margin-top: 100px;
+    position: relative;
+    top: 5000px; left: 0px;
+    background-color: red;
+}
+
+img.banf{
+    width: 100%; 
+} 
+.aisc{
+    width: 80%;
+    position: relative;
+    top: -240px;
+}
+.aisc img{
+    width: 8%;
+    position: relative;
+    top: -0px;
+    left:500px;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+}
+.aisc img:hover {
+    transform: scale(1.1);
+}
+.copy h3{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 15%;
+    height: 80px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.copy .p1{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: 35%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copy p{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    width: 30%;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.copy .correo{
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    width: 20%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copy .numero{
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    width: 20%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copy blockquote{
+    position: relative;
+    left: 127px; top: -83px;
+    font-weight: bold;
+    width: 85%;
+    height: 20px;
+}
+/*Final del Banner final footer*/
+
+/*Inicio responsive del Banner final footer*/
+@media (max-width: 1200px)
+{
+    .buttons_soci{
+        width: 20%;
+        height: auto;
+        display: flex;
+        padding: 10px 3px;
+        border: auto;
+        position: absolute;
+        top: 120px; left: 410px;
+
+    }
+    .buttons_soci a {
+        text-decoration: none;
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #ffffff;
+        color: #fa0202;
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: all .2s ease-in-out;
+    }
+    
+    .buttons_soci a:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    
+    .buttons__cover{
+        display: flex;
+        margin-top: 700px;
+        position: absolute;top: 1700px; left: 40px;
+    }
+    
+    .btn__readMore-cover{
+        padding: 14px 40px;
+        border: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background 300ms;
+        position: absolute;top: 1000px; left: 40px;
+    }
+    
+    .btn__readMore-cover:hover{
+        background: #E8E8E8;
+        position: absolute;top: 4000px; left: 40px;
+    }
+    
+    .copy{
+        color: #020202;
+        width: 100%;
+        height: 110px;
+        margin-top: 100px;
+        position: relative;
+        top: 3000px; left: 0px;
+        background-color: red;
+    }
+    
+    img.banf{
+        width: 100%;
+    
+    } 
+    .aisc{
+        width: 10%;
+        position: relative;
+        top: -260px; left: 500px;
+    }
+    .aisc img{
+        width: 68%;
+        position: relative;
+        top: 30px;
+        left: 00px;
+        object-fit: cover;
+        transition: transform 0.3s ease-out;
+        box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    }
+    .aisc img:hover {
+        transform: scale(1.1);
+    }
+    .copy h3{
+        position: absolute;
+        top: 5px;
+        left: 14px;
+        width: 35%;
+        height: 20px;
+        margin-top: 2px;
+        font-size: 21px;
+    }
+    
+    .copy .p1{
+        position: absolute;
+        top: 30px;
+        left: 14px;
+        width: 60%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 17px;
+        
+    }
+    
+    .copy p{
+        position: absolute;
+        top: 52px;
+        left: 14px;
+        width: 55%;
+        height: 80px;
+        margin-top: 20px;
+        justify-content: space-around;
+        font-size: 17px;
+    }
+    
+    .copy .correo{
+        position: absolute;
+        top: 95px;
+        left:14px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+    }
+    
+    .copy .numero{
+        position: absolute;
+        top: 140px;
+        left: 14px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 17px;
+        
+    }
+    
+    .copy blockquote{
+        position: relative;
+        left: 0px; top: -85px;
+        font-weight: bold;
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+        text-align: center; 
+    }
+}
+
+
+@media (max-width: 980px)
+{
+    .buttons_soci{
+        width: 20%;
+        height: auto;
+        display: flex;
+        padding: 10px 3px;
+        border: auto;
+        position: absolute;
+        top: 190px; left: 410px; 
+    }
+    .buttons_soci a {
+        text-decoration: none;
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #ffffff;
+        color: #fa0202;
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: all .2s ease-in-out;
+    
+    }
+    
+    .buttons_soci a:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    
+    .buttons__cover{
+        display: flex;
+        margin-top: 700px;
+        position: absolute;top: 2000px; left: 40px;
+    }
+    
+    .btn__readMore-cover{
+        padding: 14px 40px;
+        border: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background 300ms;
+        position: absolute;top: 1000px; left: 40px;
+    }
+    
+    .btn__readMore-cover:hover{
+        background: #E8E8E8;
+        position: absolute;top: 4000px; left: 40px;
+    }
+    
+       .copy{
+        color: #020202;
+        width: 100%;
+        height: 110px;
+        margin-top: 100px;
+        position: relative;
+        top: 3000px; left: 0px;
+        background-color: red;
+      }
+    
+      img.banf{
+        width: 100%;
+    } 
+    .aisc{
+        width: 40%;
+        position: relative;
+        top: -260px;
+    }
+    .aisc img{
+        width: 8%;
+        position: relative;
+        top: -0px;
+        left:500px;
+        object-fit: cover;
+        transition: transform 0.3s ease-out;
+        box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    }
+    .aisc img:hover {
+        transform: scale(1.1);
+    }
+    .copy h3{
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        width: 35%;
+        height: 20px;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+    
+    .copy .p1{
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 60%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 10px;
+        
+    }
+    
+    .copy p{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        width: 55%;
+        height: 80px;
+        margin-top: 20px;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+    
+    .copy .correo{
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+    }
+    
+    .copy .numero{
+        position: absolute;
+        top: 40px;
+        left: 5px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 10px;
+        
+    }
+    
+    .copy blockquote{
+        position: relative;
+        left: 13px; top: -20px;
+        font-weight: bold;
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+/*Final responsive del Banner final footer*/

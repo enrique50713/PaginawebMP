@@ -1,0 +1,465 @@
+
+.banner1{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 400px;
+    right: -400;
+    left: -112px;
+    font-size: 14px;
+    min-width: 150px;
+    display: flex;
+}
+.ban1{
+    position: relative;
+    width: 1400px;
+    height: 550px;
+    top: -250px;
+    right: -400;
+    left: 0px;
+    font-size: 14px;
+
+}
+
+h1{
+    position: relative;
+    width: 300px;
+    left: 20px;
+    top: 790px;
+    font-size: 28px;
+}
+
+h2{
+    position: relative;
+    width: 350px;
+    top: 830px;
+    left: 17px;
+    font-size: 28px;
+
+}
+
+p.hola{
+        position: relative;
+        width: 580px;
+        right: -30px;
+        top: 850px;
+        left: 17px;
+        font-size: 18px;
+        text-align: justify;
+}
+
+iframe.video2{
+    position: relative;
+    width: 580px;
+    height: 326px;
+    top: 524px;
+    right: 100;
+    left: 650px;
+}
+.ban2{
+    width: 620px;
+    height: 120px;
+}
+.banner2{
+    position: relative;
+    top: 680px;
+}
+
+
+p.vision{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    top: 800px;
+    right: 60px;
+    left: 20px;
+    color: grey;
+    font-size: 18px;
+    text-align: justify;
+    box-shadow: 100%;
+    
+}
+
+
+
+p.mision{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    top: 800px;
+    right: 60px;
+    left: 20px;
+    color: grey;
+    font-size: 18px;
+    text-align: justify;
+    box-shadow: 100%;
+
+}
+
+.imgmision{
+
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: 265px;
+    right: 20px;
+    left: 530px;
+    font-size: 14px;
+    color: grey;
+    
+}
+.mis{
+    width: 690px;
+    height: 490px;
+    color: grey;
+}
+
+
+.franja{
+
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 900px;
+    right: 500;
+    left: 450px;
+}
+
+.franja1{
+    width: 800px;
+    height: 180px;
+}
+
+
+
+img.logo2{
+    width: 200px;
+    height: 160px;
+}
+
+.fundador{
+
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top: 1200px;
+    right: 20px;
+    left: 0px;
+    font-size: 14px;
+    
+}
+img.boby{
+    width: 600px;
+    height: 400px;
+    
+
+}
+
+
+p.historia{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    top: 1200px;
+    right: 60px;
+    left: 630px;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    box-shadow: 100%;
+    
+}
+
+.banf{
+    position: relative;
+    left: 10px;
+
+}
+/*footer parte final */
+
+/*Botones de redes sociales*/
+.buttons_soci{
+    width: 20%;
+    height: auto;
+    display: flex;
+    padding: 10px 3px;
+    border: auto;
+    position: absolute;
+    top: 160px; left: 410px; 
+}
+.buttons_soci a {
+    text-decoration: none;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ffffff;
+    color: #fa0202;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: all .2s ease-in-out;
+
+}
+
+.buttons_soci a:hover {
+    transform: scale(1.1);
+}
+
+
+
+.buttons__cover{
+    display: flex;
+    margin-top: 700px;
+    position: absolute;top: 2000px; left: 40px;
+}
+
+.btn__readMore-cover{
+    padding: 14px 40px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+    position: absolute;top: 1000px; left: 40px;
+}
+
+.btn__readMore-cover:hover{
+    background: #E8E8E8;
+    position: absolute;top: 4000px; left: 40px;
+}
+
+/*Banner final footer*/
+   .copysomos{
+    color: #020202;
+    width: 100%;
+    height: 240px;
+    margin-top: 100px;
+    position: relative;
+    top: 1400px; left: 0px;
+    background-color: red;
+  }
+
+  img.banf{
+    width: 100%; 
+} 
+.aisc{
+    width: 80%;
+    position: relative;
+    top: -240px;
+}
+.aisc img{
+    width: 8%;
+    position: relative;
+    top: -0px;
+    left:500px;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+}
+.aisc img:hover {
+    transform: scale(1.1);
+}
+.copysomos h3{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 15%;
+    height: 80px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.copysomos .p1{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: 35%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copysomos p{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    width: 30%;
+    height: 80px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.copysomos .correo{
+    position: absolute;
+    top: 120px;
+    left: 15px;
+    width: 20%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copysomos .numero{
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    width: 20%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.copysomos blockquote{
+    position: relative;
+    left: 127px; top: -83px;
+    font-weight: bold;
+    width: 85%;
+    height: 20px;
+}
+
+@media (max-width: 980px)
+{
+    .buttons_soci{
+        width: 20%;
+        height: auto;
+        display: flex;
+        padding: 10px 3px;
+        border: auto;
+        position: absolute;
+        top: 190px; left: 410px; 
+    }
+    .buttons_soci a {
+        text-decoration: none;
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #ffffff;
+        color: #fa0202;
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+        transition: all .2s ease-in-out;
+    
+    }
+    
+    .buttons_soci a:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    
+    .buttons__cover{
+        display: flex;
+        margin-top: 700px;
+        position: absolute;top: 2000px; left: 40px;
+    }
+    
+    .btn__readMore-cover{
+        padding: 14px 40px;
+        border: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background 300ms;
+        position: absolute;top: 1000px; left: 40px;
+    }
+    
+    .btn__readMore-cover:hover{
+        background: #E8E8E8;
+        position: absolute;top: 4000px; left: 40px;
+    }
+    
+       .copysomos{
+        color: #020202;
+        width: 100%;
+        height: 110px;
+        margin-top: 100px;
+        position: relative;
+        top: 3000px; left: 0px;
+        background-color: red;
+      }
+    
+      img.banf{
+        width: 100%;
+    } 
+    .aisc{
+        width: 40%;
+        position: relative;
+        top: -260px;
+    }
+    .aisc img{
+        width: 8%;
+        position: relative;
+        top: -0px;
+        left:500px;
+        object-fit: cover;
+        transition: transform 0.3s ease-out;
+        box-shadow: 1px 1px 1px 1px rgba(32,32,32,0.3);
+    }
+    .aisc img:hover {
+        transform: scale(1.1);
+    }
+    .copysomos h3{
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        width: 35%;
+        height: 20px;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+    
+    .copysomos .p1{
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 60%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 10px;
+        
+    }
+    
+    .copysomos p{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        width: 55%;
+        height: 80px;
+        margin-top: 20px;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+    
+    .copysomos .correo{
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+    }
+    
+    .copy .numero{
+        position: absolute;
+        top: 40px;
+        left: 5px;
+        width: 20%;
+        height: 80px;
+        margin-top: 20px;
+        font-size: 10px;
+        
+    }
+    
+    .copysomos blockquote{
+        position: relative;
+        left: 13px; top: -20px;
+        font-weight: bold;
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+    }
+}
