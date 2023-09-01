@@ -336,7 +336,7 @@ header{
 /*Final de la Foto que pertenecemos al grupo*/
 
 /*Inicio responsive de la Foto que pertenecemos al grupo*/
-@media (max-width: 1250px)
+@media (max-width: 1350px)
 {
     .tzimg img{
         width: 40%;
@@ -698,7 +698,7 @@ header{
     }
 }
 /*Final responsive de galeria de proyectos varios*/
-@media (max-width: 1200px)
+@media (max-width: 1350px)
 {
     .galery {
         width: 100%;
@@ -1024,7 +1024,7 @@ img.banf{
 /*Final del Banner final footer*/
 
 /*Inicio responsive del Banner final footer*/
-@media (max-width: 1200px)
+@media (max-width: 1350px)
 {
     .buttons_soci{
         width: 20%;
